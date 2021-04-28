@@ -1,0 +1,157 @@
+/**********************************************TAG SELECTOR **************************************/
+body{
+  /* margin-left: 0; when it is zero u dont hv to specify unit.
+  margin-right: 0;
+  margin-top: 0; */
+margin: 0; /*sets margin for all 4 sides to zero*/
+text-align: center; /*those element whose width are not set they become centered*/
+font-family: 'Merriweather Sans', sans-serif;
+color: #40514E;
+}
+
+h1{
+  margin:50px auto 0 auto;/* to remove the margin from the bottom of h1 so that h1 come closer to 'p' below */
+  font-size: 4.645rem;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  /*line-height: 2;*/
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  padding-bottom: 10px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+p{
+  line-height: 2; /*(not to mention unit for line height)it will double the line height between the text of all para*/
+}
+
+hr{
+  border: dotted #aad8d3 9px;/*#EAF6F6*/
+  border-bottom:none;
+  width: 5%;
+  margin: 100px auto;
+
+}
+
+a{
+  color: #11999E;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #EAF6F6;
+}
+/**********************************************CLASS SELECTOR **************************************/
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+.top-container{
+  background-color: #E4F9F5;
+  padding-top: 8.4375rem; /*not static*/
+  position: relative;
+}
+
+.mohit-pic{
+  width: 200px;
+  height: 200px;
+}
+
+
+
+.middle-container{
+  padding: 100px 0;/*100px for top and bottom and 0 for left and right*/
+}
+.bottom-container{
+  padding: 50px 0 20px;
+  background-color: #66BFBF;
+
+}
+
+.skill-row{
+  width: 50%;/*becoz skill-row has width set so it will not be centred if in body we mention them to be centred */
+  margin: 150px auto 100px auto; /*to make them centre*/
+  text-align:left; /*it will override the center text-align property of body*/
+  /*line-height: 2;  /*(not to mention unit for line height)it will double the line height between the text of this div*/
+}
+
+
+.top-cloud{
+  position: absolute; /*they become absolute , relative to top-container(parent) becoz its position is set to relative*/
+  right: 400px;
+  top: 40px;
+}
+
+.bottom-cloud{
+  position: absolute; /*they become absolute , relative to top-container(parent) becoz its position is set to relative*/
+  left: 250px;
+  bottom: 300px;
+}
+
+.computer-img{
+  width: 25%;   /*they're now scaled down based on the width of their parent which in this case is actually the skill-row*/
+  float: left;
+  margin-right: 30px
+}
+
+.DB-img{
+  width: 25%;  /*they're now scaled down based on the width of their parent which in this case is actually the skill-row*/
+  float: right;
+  margin-left: 30px;
+}
+
+.contact-me{
+  width: 50%;
+  margin: 40px auto 60px; /*40 for top auto for left and right and 60 for bottom*/
+}
+
+.footer-link{
+  color: #11999E;
+}
+
+
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.copyright{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
